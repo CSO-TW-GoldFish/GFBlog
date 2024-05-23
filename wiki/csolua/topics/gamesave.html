@@ -17,18 +17,18 @@
   <meta name="theme-color" media="(prefers-color-scheme: light)" content="#f9fafb">
   <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#000">
   
-  <title>CSO LUA：Game - 金魚</title>
+  <title>CSO LUA：GameSave API - 金魚</title>
 
   
-    <meta name="description" content="這是金魚的部落格">
+    <meta name="description" content="啟用遊戲保存功能通過分配地圖的 gamesave 組索引，可以使用 GameSave 功能來支援地圖。要禁用它，只需取消分配其遊戲保存組索引即可。 遊戲保存數據遊戲儲存資料有 2 種類型：  共用遊戲保存數據。 玩家遊戲保存數據。  共用的遊戲存檔數據將共用到同一存檔遊戲組索引上的所有地圖。 例如，將映射A和映射B分配給保存遊戲組索引1。然後，腳本編寫器使用 Game.Rule.SetGameSa">
 <meta property="og:type" content="website">
-<meta property="og:title" content="Game">
-<meta property="og:url" content="https://cso-tw-goldfish.github.io/GFBlog/wiki/csolua/game">
+<meta property="og:title" content="GameSave API">
+<meta property="og:url" content="https://cso-tw-goldfish.github.io/GFBlog/wiki/csolua/topics/gamesave">
 <meta property="og:site_name" content="金魚">
-<meta property="og:description" content="這是金魚的部落格">
+<meta property="og:description" content="啟用遊戲保存功能通過分配地圖的 gamesave 組索引，可以使用 GameSave 功能來支援地圖。要禁用它，只需取消分配其遊戲保存組索引即可。 遊戲保存數據遊戲儲存資料有 2 種類型：  共用遊戲保存數據。 玩家遊戲保存數據。  共用的遊戲存檔數據將共用到同一存檔遊戲組索引上的所有地圖。 例如，將映射A和映射B分配給保存遊戲組索引1。然後，腳本編寫器使用 Game.Rule.SetGameSa">
 <meta property="og:locale" content="zh_TW">
-<meta property="article:published_time" content="2024-05-07T17:03:49.031Z">
-<meta property="article:modified_time" content="2024-05-07T17:03:49.031Z">
+<meta property="article:published_time" content="2024-05-23T08:29:53.194Z">
+<meta property="article:modified_time" content="2024-05-07T16:55:41.135Z">
 <meta property="article:author" content="GoldFish">
 <meta name="twitter:card" content="summary">
   
@@ -64,7 +64,7 @@
 </div>
 <div class="widgets">
 
-<widget class="widget-wrapper post-list"><div class="widget-header dis-select"><span class="name">首頁</span></div><div class="widget-header dis-select"><span class="name">Classes 類別</span></div><div class="widget-body fs14"><a class="link" href="/GFBlog/wiki/csolua/common"><span class="toc-text">Common</span></a><a class="link active" href="/GFBlog/wiki/csolua/game"><span class="toc-text">Game</span><svg class="active-icon" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="currentColor" d="M21 11.098v4.993c0 3.096 0 4.645-.734 5.321c-.35.323-.792.526-1.263.58c-.987.113-2.14-.907-4.445-2.946c-1.02-.901-1.529-1.352-2.118-1.47a2.225 2.225 0 0 0-.88 0c-.59.118-1.099.569-2.118 1.47c-2.305 2.039-3.458 3.059-4.445 2.945a2.238 2.238 0 0 1-1.263-.579C3 20.736 3 19.188 3 16.091v-4.994C3 6.81 3 4.666 4.318 3.333C5.636 2 7.758 2 12 2c4.243 0 6.364 0 7.682 1.332C21 4.665 21 6.81 21 11.098" opacity=".5"/><path fill="currentColor" d="M9 5.25a.75.75 0 0 0 0 1.5h6a.75.75 0 0 0 0-1.5z"/></svg></a><a class="link" href="/GFBlog/wiki/csolua/ui"><span class="toc-text">UI</span></a></div><div class="widget-header dis-select"><span class="name">Topics 主題</span></div><div class="widget-body fs14"><a class="link" href="/GFBlog/wiki/csolua/changes"><span class="toc-text">API 更新日誌</span></a><a class="link" href="/GFBlog/wiki/csolua/gamesave"><span class="toc-text">GameSave API</span></a></div><div class="widget-header dis-select"><span class="name">Examples 範例</span></div><div class="widget-body fs14"><a class="link" href="/GFBlog/wiki/csolua/scenariot_common"><span class="toc-text">啟示錄TX Common</span></a><a class="link" href="/GFBlog/wiki/csolua/scenariot_game"><span class="toc-text">啟示錄TX Game</span></a><a class="link" href="/GFBlog/wiki/csolua/scenariot_ui"><span class="toc-text">啟示錄TX UI</span></a><a class="link" href="/GFBlog/wiki/csolua/tdm_game"><span class="toc-text">團隊死鬥 Game</span></a><a class="link" href="/GFBlog/wiki/csolua/tdm_ui"><span class="toc-text">團隊死鬥 UI</span></a></div></widget>
+<widget class="widget-wrapper post-list"><div class="widget-header dis-select"><span class="name">首頁</span></div><div class="widget-body fs14"><a class="link" href="/GFBlog/wiki/csolua/#start"><span class="toc-text">介紹</span></a></div><div class="widget-header dis-select"><span class="name">Modules 模組</span></div><div class="widget-body fs14"><a class="link" href="/GFBlog/wiki/csolua/common/common"><span class="toc-text">Common</span></a><a class="link" href="/GFBlog/wiki/csolua/game/game"><span class="toc-text">Game</span></a><a class="link" href="/GFBlog/wiki/csolua/ui/ui"><span class="toc-text">UI</span></a></div><div class="widget-header dis-select"><span class="name">Classes 類別</span></div><div class="widget-body fs14"><a class="link" href="/GFBlog/wiki/csolua/common/common.weaponoption"><span class="toc-text">Common.WeaponOption</span></a><a class="link" href="/GFBlog/wiki/csolua/game/game.rule"><span class="toc-text">Game.Rule</span></a><a class="link" href="/GFBlog/wiki/csolua/game/game.entityblock"><span class="toc-text">Game.EntityBlock</span></a><a class="link" href="/GFBlog/wiki/csolua/game/game.entity"><span class="toc-text">Game.Entity</span></a><a class="link" href="/GFBlog/wiki/csolua/game/game.monster"><span class="toc-text">Game.Monster</span></a><a class="link" href="/GFBlog/wiki/csolua/game/game.player"><span class="toc-text">Game.Player</span></a><a class="link" href="/GFBlog/wiki/csolua/game/game.syncvalue"><span class="toc-text">Game.SyncValue</span></a><a class="link" href="/GFBlog/wiki/csolua/game/game.weapon"><span class="toc-text">Game.Weapon</span></a><a class="link" href="/GFBlog/wiki/csolua/ui/ui.syncvalue"><span class="toc-text">UI.SyncValue</span></a><a class="link" href="/GFBlog/wiki/csolua/ui/ui.event"><span class="toc-text">UI.Event</span></a><a class="link" href="/GFBlog/wiki/csolua/ui/ui.text"><span class="toc-text">UI.Text</span></a><a class="link" href="/GFBlog/wiki/csolua/ui/ui.box"><span class="toc-text">UI.Box</span></a></div><div class="widget-header dis-select"><span class="name">Topics 主題</span></div><div class="widget-body fs14"><a class="link" href="/GFBlog/wiki/csolua/topics/changes"><span class="toc-text">API 更新日誌</span></a><a class="link active" href="/GFBlog/wiki/csolua/topics/gamesave"><span class="toc-text">GameSave API</span><svg class="active-icon" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="currentColor" d="M21 11.098v4.993c0 3.096 0 4.645-.734 5.321c-.35.323-.792.526-1.263.58c-.987.113-2.14-.907-4.445-2.946c-1.02-.901-1.529-1.352-2.118-1.47a2.225 2.225 0 0 0-.88 0c-.59.118-1.099.569-2.118 1.47c-2.305 2.039-3.458 3.059-4.445 2.945a2.238 2.238 0 0 1-1.263-.579C3 20.736 3 19.188 3 16.091v-4.994C3 6.81 3 4.666 4.318 3.333C5.636 2 7.758 2 12 2c4.243 0 6.364 0 7.682 1.332C21 4.665 21 6.81 21 11.098" opacity=".5"/><path fill="currentColor" d="M9 5.25a.75.75 0 0 0 0 1.5h6a.75.75 0 0 0 0-1.5z"/></svg></a></div><div class="widget-header dis-select"><span class="name">Examples 範例</span></div><div class="widget-body fs14"><a class="link" href="/GFBlog/wiki/csolua/examples/scenariot_common"><span class="toc-text">啟示錄TX Common</span></a><a class="link" href="/GFBlog/wiki/csolua/examples/scenariot_game"><span class="toc-text">啟示錄TX Game</span></a><a class="link" href="/GFBlog/wiki/csolua/examples/scenariot_ui"><span class="toc-text">啟示錄TX UI</span></a><a class="link" href="/GFBlog/wiki/csolua/examples/tdm_game"><span class="toc-text">團隊死鬥 Game</span></a><a class="link" href="/GFBlog/wiki/csolua/examples/tdm_ui"><span class="toc-text">團隊死鬥 UI</span></a></div></widget>
 
 
 </div>
@@ -79,11 +79,29 @@
   <div class="content">
     <div class="top bread-nav footnote"><div class="left"><div class="flex-row" id="breadcrumb"><a class="cap breadcrumb" href="/GFBlog/GFBlog/">首頁</a>
 <span class="sep"></span><a class="cap breadcrumb" id="menu" href="/GFBlog/wiki">文檔</a><span class="sep"></span><a class="cap breadcrumb" id="proj" href="/GFBlog/wiki/csolua/">CSO LUA</a></div>
-<div class="flex-row" id="post-meta"><span class="text created">更新於：<time datetime="2024-05-07T17:03:49.031Z">2024-05-08</time></span></div></div></div>
+<div class="flex-row" id="post-meta"><span class="text created">更新於：<time datetime="2024-05-07T16:55:41.135Z">2024-05-08</time></span></div></div></div>
     
   </div>
-  </div><article class="md-text content"></article>
-<div class="related-wrap" id="read-next"><section class="body"><div class="item" id="prev"><div class="note">回顧上一篇</div><a href="/GFBlog/wiki/csolua/common">Common</a></div><div class="item" id="next"><div class="note">接下來閱讀</div><a href="/GFBlog/wiki/csolua/ui">UI</a></div></section></div>
+  </div><article class="md-text content"><h2 id="啟用遊戲保存功能"><a href="#啟用遊戲保存功能" class="headerlink" title="啟用遊戲保存功能"></a>啟用遊戲保存功能</h2><p>通過分配地圖的 gamesave 組索引，可以使用 GameSave 功能來支援地圖。<br>要禁用它，只需取消分配其遊戲保存組索引即可。</p>
+<h2 id="遊戲保存數據"><a href="#遊戲保存數據" class="headerlink" title="遊戲保存數據"></a>遊戲保存數據</h2><p>遊戲儲存資料有 2 種類型：</p>
+<ol>
+<li>共用遊戲保存數據。</li>
+<li>玩家遊戲保存數據。</li>
+</ol>
+<p>共用的遊戲存檔數據將共用到同一存檔遊戲組索引上的所有地圖。</p>
+<p>例如，將映射<mark class="tag-plugin colorful mark" color="blue">A</mark>和映射<mark class="tag-plugin colorful mark" color="blue">B</mark>分配給保存遊戲組索引<mark class="tag-plugin colorful mark" color="blue">1</mark>。然後，腳本編寫器使用 Game.Rule.SetGameSave 保存地圖<mark class="tag-plugin colorful mark" color="blue">A</mark>上的資料。之後，保存的數據將共用到兩個地圖，並可以使用 Game.Rule.GetGameSave 進行檢索。</p>
+<p>同時在玩家遊戲保存數據時，會保存在特定玩家身上，共用到同一保存遊戲組索引上的所有地圖。</p>
+<p>例如，將映射<mark class="tag-plugin colorful mark" color="blue">A</mark>和映射<mark class="tag-plugin colorful mark" color="blue">B</mark>分配給保存遊戲組索引<mark class="tag-plugin colorful mark" color="blue">1</mark>。然後，玩家<mark class="tag-plugin colorful mark" color="yellow">Bob</mark>播放地圖<mark class="tag-plugin colorful mark" color="blue">A</mark>並使用 Game.Player.SetGameSave 保存數據。退出地圖<mark class="tag-plugin colorful mark" color="blue">A</mark>後，玩家”Bob”播放地圖<mark class="tag-plugin colorful mark" color="blue">B</mark>。然後，保存的數據將共用到兩個地圖，並可以使用玩家<mark class="tag-plugin colorful mark" color="yellow">Bob</mark>的Game.Player.GetGameSave進行檢索。</p>
+<h2 id="保存並載入"><a href="#保存並載入" class="headerlink" title="保存並載入"></a>保存並載入</h2><p>共用的遊戲保存數據會在遊戲開始時自動載入，並在遊戲結束時每 1 分鐘或結束時自動批量保存。</p>
+<p>玩家遊戲保存數據可以自動載入，也可以在首次生成後按<kbd>L</kbd>手動載入，具體取決於 Common.SetAutoLoad 設置。</p>
+<p>如果玩家沒有載入數據，它將每 1 分鐘或在遊戲結束時自動保存並被新資料覆蓋！</p>
+<h2 id="普通玩家遊戲保存數據"><a href="#普通玩家遊戲保存數據" class="headerlink" title="普通玩家遊戲保存數據"></a>普通玩家遊戲保存數據</h2><p>玩家數據會自動保存和載入一些常用數據<br>以下是它們清單：</p>
+<div class="tag-plugin colorful note" ><div class="body"><div class="tag-plugin grid"  style="grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));"><div class="cell" style="">    <p><strong>health</strong><br><strong>maxhealth</strong><br><strong>armor</strong><br><strong>maxarmor</strong><br><strong>coin</strong><br><strong>items</strong></p>    </div>    <div class="cell" style="">    <p>目前血量<br>血量最大值<br>目前護甲<br>護甲最大值<br>Studio 金幣數量<br>Studio 物品背包清單</p>    </div>    </div></div></div>
+
+
+<p>由於上述數據是自動保存的，因此腳本編寫器無法使用 Game.Player.SetGameSave 方法覆蓋它們。但是，您可以使用 Game.Player.GetGameSave 方法檢索它們。</p>
+</article>
+<div class="related-wrap" id="read-next"><section class="body"><div class="item" id="prev"><div class="note">回顧上一篇</div><a href="/GFBlog/wiki/csolua/topics/changes">API 更新日誌</a></div><div class="item" id="next"><div class="note">接下來閱讀</div><a href="/GFBlog/wiki/csolua/examples/scenariot_common">啟示錄TX Common</a></div></section></div>
 
 
 
@@ -91,7 +109,14 @@
 <footer class="page-footer footnote"><hr><div class="text"><p>本站由 <a href="/">GoldFish</a> 使用 <a target="_blank" rel="noopener" href="https://github.com/xaoxuu/hexo-theme-stellar/tree/1.28.1">Stellar 1.28.1</a> 主題建立。<br>本部落格所有文章除特別聲明外，均採用 <a target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a> 授權協議，轉載請註明出處。</p>
 </div></footer>
 <div class="main-mask" onclick="sidebar.dismiss()"></div></div><aside class="l_right">
-</aside><div class='float-panel blur'>
+<div class="widgets">
+
+
+
+<widget class="widget-wrapper toc" id="data-toc" collapse="false"><div class="widget-header dis-select"><span class="name">本文目錄</span><a class="cap-action" onclick="sidebar.toggleTOC()" ><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6h11m-11 6h11m-11 6h11M4 6h1v4m-1 0h2m0 8H4c0-1 2-2 2-3s-1-1.5-2-1"/></svg></a></div><div class="widget-body"><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%95%9F%E7%94%A8%E9%81%8A%E6%88%B2%E4%BF%9D%E5%AD%98%E5%8A%9F%E8%83%BD"><span class="toc-text">啟用遊戲保存功能</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%81%8A%E6%88%B2%E4%BF%9D%E5%AD%98%E6%95%B8%E6%93%9A"><span class="toc-text">遊戲保存數據</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BF%9D%E5%AD%98%E4%B8%A6%E8%BC%89%E5%85%A5"><span class="toc-text">保存並載入</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%99%AE%E9%80%9A%E7%8E%A9%E5%AE%B6%E9%81%8A%E6%88%B2%E4%BF%9D%E5%AD%98%E6%95%B8%E6%93%9A"><span class="toc-text">普通玩家遊戲保存數據</span></a></li></ol></div><div class="widget-footer">
+
+<a class="top" onclick="util.scrollTop()"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.5"><path d="M2 12c0-4.714 0-7.071 1.464-8.536C4.93 2 7.286 2 12 2c4.714 0 7.071 0 8.535 1.464C22 4.93 22 7.286 22 12c0 4.714 0 7.071-1.465 8.535C19.072 22 16.714 22 12 22s-7.071 0-8.536-1.465C2 19.072 2 16.714 2 12Z"/><path stroke-linecap="round" stroke-linejoin="round" d="m9 15.5l3-3l3 3m-6-4l3-3l3 3"/></g></svg><span>回到頂部</span></a><a class="buttom" onclick="util.scrollComment()"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="currentColor" fill-rule="evenodd" d="M10.46 1.25h3.08c1.603 0 2.86 0 3.864.095c1.023.098 1.861.3 2.6.752a5.75 5.75 0 0 1 1.899 1.899c.452.738.654 1.577.752 2.6c.095 1.004.095 2.261.095 3.865v1.067c0 1.141 0 2.036-.05 2.759c-.05.735-.153 1.347-.388 1.913a5.75 5.75 0 0 1-3.112 3.112c-.805.334-1.721.408-2.977.43a10.81 10.81 0 0 0-.929.036c-.198.022-.275.054-.32.08c-.047.028-.112.078-.224.232c-.121.166-.258.396-.476.764l-.542.916c-.773 1.307-2.69 1.307-3.464 0l-.542-.916a10.605 10.605 0 0 0-.476-.764c-.112-.154-.177-.204-.224-.232c-.045-.026-.122-.058-.32-.08c-.212-.023-.49-.03-.93-.037c-1.255-.021-2.171-.095-2.976-.429A5.75 5.75 0 0 1 1.688 16.2c-.235-.566-.338-1.178-.389-1.913c-.049-.723-.049-1.618-.049-2.76v-1.066c0-1.604 0-2.86.095-3.865c.098-1.023.3-1.862.752-2.6a5.75 5.75 0 0 1 1.899-1.899c.738-.452 1.577-.654 2.6-.752C7.6 1.25 8.857 1.25 10.461 1.25M6.739 2.839c-.914.087-1.495.253-1.959.537A4.25 4.25 0 0 0 3.376 4.78c-.284.464-.45 1.045-.537 1.96c-.088.924-.089 2.11-.089 3.761v1c0 1.175 0 2.019.046 2.685c.045.659.131 1.089.278 1.441a4.25 4.25 0 0 0 2.3 2.3c.515.214 1.173.294 2.429.316h.031c.398.007.747.013 1.037.045c.311.035.616.104.909.274c.29.17.5.395.682.645c.169.232.342.525.538.856l.559.944a.52.52 0 0 0 .882 0l.559-.944c.196-.331.37-.624.538-.856c.182-.25.392-.476.682-.645c.293-.17.598-.24.909-.274c.29-.032.639-.038 1.037-.045h.032c1.255-.022 1.913-.102 2.428-.316a4.25 4.25 0 0 0 2.3-2.3c.147-.352.233-.782.278-1.441c.046-.666.046-1.51.046-2.685v-1c0-1.651 0-2.837-.089-3.762c-.087-.914-.253-1.495-.537-1.959a4.25 4.25 0 0 0-1.403-1.403c-.464-.284-1.045-.45-1.96-.537c-.924-.088-2.11-.089-3.761-.089h-3c-1.651 0-2.837 0-3.762.089" clip-rule="evenodd"/><path fill="currentColor" d="M9 11a1 1 0 1 1-2 0a1 1 0 0 1 2 0m4 0a1 1 0 1 1-2 0a1 1 0 0 1 2 0m4 0a1 1 0 1 1-2 0a1 1 0 0 1 2 0"/></svg><span>參與討論</span></a></div></widget>
+</div></aside><div class='float-panel blur'>
   <button type='button' style='display:none' class='laptop-only rightbar-toggle mobile' onclick='sidebar.rightbar()'>
     <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6h11m-11 6h11m-11 6h11M4 6h1v4m-1 0h2m0 8H4c0-1 2-2 2-3s-1-1.5-2-1"/></svg>
   </button>
