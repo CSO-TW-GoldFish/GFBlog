@@ -1,0 +1,56 @@
+stellar:
+  version: '1.0.0'
+  homepage: 'https://CSO-TW-GoldFish.github.io/GFBlog'
+  repo: 'https://github.com/CSO-TW-GoldFish/GFBlog'
+  main_css: /GFBlog/css/main.css
+  main_js: /GFBlog/js/main.js
+
+style:
+  font-family:
+    logo: '"LXGW WenKai Screen", system-ui, "Microsoft Yahei", "Segoe UI", -apple-system, Roboto, Ubuntu, "Helvetica Neue", Arial, "WenQuanYi Micro Hei", sans-serif'
+    body: '"LXGW WenKai Screen", system-ui, "Microsoft Yahei", "Segoe UI", -apple-system, Roboto, Ubuntu, "Helvetica Neue", Arial, "WenQuanYi Micro Hei", sans-serif'
+
+article:
+  license: '本文採用 [署名-非商業性使用-相同方式分享 4.0 國際](https://creativecommons.org/licenses/by-nc-sa/4.0/) 授權協議，轉載請註明出處。'
+
+comments:
+  comment_title: 快來參與討論吧~
+
+footer:
+  content: | 
+    本站由 [{author.name}](/) 使用 [{theme.name} {theme.version}]({theme.tree}) 主題建立。
+    本部落格所有文章除特別聲明外，均採用 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/) 授權協議，轉載請註明出處。
+tag_plugins:
+  copy:
+    toast: 複製成功
+  okr:
+    status:
+      at_risk:
+        label: 風險
+plugins:
+  tianli_gpt:
+    interface:
+      name: AI摘要
+      introduce: '我是文章輔助AI: QX-AI，點擊下方的按鈕，讓我產生本文簡介、推薦相關文章等。'
+      button: ["介紹自己", "推薦文章", "生成摘要", "矩陣穿梭"]
+  copycode:
+    toast: 複製成功
+
+menubar:
+  columns: 2
+  items:
+    # id: 页面中高亮的 menu_id 
+    # theme: 高亮时的颜色，仅 svg 中 fill="currentColor" 时有效
+    # icon: 支持 svg/img 标签，可以定义在 icons.yml 文件中，也支持外部图片的 URL
+    # title: 标题
+    # url: 点击跳转到哪，支持相对路径和绝对路径
+    - id: blog
+      theme: '#1BCDFC'
+      icon: solar:documents-bold-duotone
+      title: 部落格
+      url: /
+    - id: wiki
+      theme: '#3DC550'
+      icon: solar:notebook-bookmark-bold-duotone
+      title: 文檔
+      url: /wiki/

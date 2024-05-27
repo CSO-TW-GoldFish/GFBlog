@@ -1,0 +1,44 @@
+name: CSO LUA
+title: CSO STUDIO LUA - 中文文檔
+subtitle: '中文文檔 | Created by GoldFish'
+tags: CSO LUA
+icon: /GFBlog/assets/image/cso-studio.png
+cover: /GFBlog/assets/image/cso-studio-logo.png
+coverpage: true
+description: CSO STUDIO LUA 說明API使用方式
+search:
+  filter: /wiki/csolua/
+  placeholder: 在 CSO LUA 中搜索...
+leftbar: 
+  - tree
+  - related
+base_dir: /wiki/csolua/
+tree:
+  '首頁':
+    - index
+  'Modules 模組':
+    - common/common
+    - game/game
+    - ui/ui
+  'Classes 類別':
+    - common/common.weaponoption
+    - game/game.rule
+    - game/game.entityblock
+    - game/game.entity
+    - game/game.monster
+    - game/game.player
+    - game/game.syncvalue
+    - game/game.weapon
+    - ui/ui.syncvalue
+    - ui/ui.event
+    - ui/ui.text
+    - ui/ui.box
+  'Topics 主題':
+    - topics/changes
+    - topics/gamesave
+  'Examples 範例':
+    - examples/scenariot_common
+    - examples/scenariot_game
+    - examples/scenariot_ui
+    - examples/tdm_game
+    - examples/tdm_ui
